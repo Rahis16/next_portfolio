@@ -1,0 +1,122 @@
+{
+    "sourceFile": "app/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1750483816320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750483995305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { Poppins } from \"next/font/google\";\n+import \"./globals.css\";\n+\n+const poppins = Poppins({\n+  weight: [\"400\", \"600\", \"700\"],\n+  subsets: [\"latin\"],\n+  variable: \"--font-poppins\",\n+});\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${poppins.variable} antialiased`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484006267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,26 +19,4 @@\n       </body>\n     </html>\n   );\n }\n-import { Poppins } from \"next/font/google\";\n-import \"./globals.css\";\n-\n-const poppins = Poppins({\n-  weight: [\"400\", \"600\", \"700\"],\n-  subsets: [\"latin\"],\n-  variable: \"--font-poppins\",\n-});\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${poppins.variable} antialiased`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1750484035120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+// app/layout.tsx or wherever your RootLayout is\n+\n+import { Poppins } from \"next/font/google\";\n+import \"./globals.css\";\n+\n+const poppins = Poppins({\n+  subsets: [\"latin\"],\n+  weight: [\"400\", \"600\", \"700\"], // add weights you want\n+  variable: \"--font-poppins\",\n+  display: \"swap\", // optional but recommended for performance\n+});\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${poppins.variable} font-sans antialiased`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484248988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,47 +1,31 @@\n-// app/layout.tsx or wherever your RootLayout is\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Poppins } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+import { NotificationProvider } from '@/context/messageContext';\n+import ConditionalLayout from '@/components/ConditionalLayout';\n+import { AuthProvider } from '@/context/AuthContext';\n \n-import { Poppins } from \"next/font/google\";\n-import \"./globals.css\";\n+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] }); // weights optional, but good to include\n \n-const poppins = Poppins({\n-  subsets: [\"latin\"],\n-  weight: [\"400\", \"600\", \"700\"], // add weights you want\n-  variable: \"--font-poppins\",\n-  display: \"swap\", // optional but recommended for performance\n-});\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n \n export default function RootLayout({\n   children,\n }: {\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={`${poppins.variable} font-sans antialiased`}>\n-        {children}\n+      <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n+        <AuthProvider>\n+          <NotificationProvider>\n+            <ConditionalLayout>{children}</ConditionalLayout>\n+          </NotificationProvider>\n+        </AuthProvider>\n       </body>\n     </html>\n   );\n }\n-import { Poppins } from \"next/font/google\";\n-import \"./globals.css\";\n-\n-const poppins = Poppins({\n-  weight: [\"400\", \"600\", \"700\"],\n-  subsets: [\"latin\"],\n-  variable: \"--font-poppins\",\n-});\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${poppins.variable} antialiased`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1750484254933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n import './globals.css';\n import type { Metadata } from 'next';\n import { Poppins } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-import { NotificationProvider } from '@/context/messageContext';\n-import ConditionalLayout from '@/components/ConditionalLayout';\n-import { AuthProvider } from '@/context/AuthContext';\n \n const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] }); // weights optional, but good to include\n \n export const metadata: Metadata = {\n"
+                },
+                {
+                    "date": 1750484261122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,8 @@\n }) {\n   return (\n     <html lang=\"en\">\n       <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n-        <AuthProvider>\n-          <NotificationProvider>\n             <ConditionalLayout>{children}</ConditionalLayout>\n           </NotificationProvider>\n         </AuthProvider>\n       </body>\n"
+                },
+                {
+                    "date": 1750484266378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,8 @@\n   return (\n     <html lang=\"en\">\n       <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n             <ConditionalLayout>{children}</ConditionalLayout>\n-          </NotificationProvider>\n-        </AuthProvider>\n       </body>\n     </html>\n   );\n }\n"
+                },
+                {
+                    "date": 1750484271642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n }) {\n   return (\n     <html lang=\"en\">\n       <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n-            <ConditionalLayout>{children}</ConditionalLayout>\n+          {children}\n       </body>\n     </html>\n   );\n }\n"
+                },
+                {
+                    "date": 1750484723068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import './globals.css';\n import type { Metadata } from 'next';\n-import { Poppins } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+import {  } from 'next/font/google';  // <-- Import Poppins instead of Inter\n \n const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] }); // weights optional, but good to include\n \n export const metadata: Metadata = {\n@@ -16,9 +16,9 @@\n }) {\n   return (\n     <html lang=\"en\">\n       <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n-          {children}\n+        {children}\n       </body>\n     </html>\n   );\n }\n"
+                },
+                {
+                    "date": 1750484748733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import './globals.css';\n import type { Metadata } from 'next';\n import {  } from 'next/font/google';  // <-- Import Poppins instead of Inter\n \n-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] }); // weights optional, but good to include\n+const inter = Inter({ subsets: ['latin'] });\n \n export const metadata: Metadata = {\n   title: 'SmartCanteen',\n   description: 'Modern canteen management system for colleges',\n"
+                },
+                {
+                    "date": 1750484773188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import './globals.css';\n import type { Metadata } from 'next';\n-import {  } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n \n const inter = Inter({ subsets: ['latin'] });\n \n export const metadata: Metadata = {\n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={`${poppins.className} bg-gray-50 text-gray-900`}>\n+      <body className={${inter.className} bg-gray-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484790757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={${inter.className} bg-gray-50 text-gray-900`}>\n+      <body className={${inter.className} bg-gray-50 text-gray-900}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484823776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={${inter.className} bg-gray-50 text-gray-900}>\n+      <body {`${inter.className} bg-gray-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484837160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body {`${inter.className} bg-gray-50 text-gray-900`}>\n+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484845909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body {`${inter.className} bg-gray-50 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484864928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,34 +15,10 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body {`${inter.className} bg-gray-50 text-gray-900`}>\n+      <body className={${inter.className} bg-gray-50 text-gray-900}>\n         {children}\n       </body>\n     </html>\n   );\n }\n-import './globals.css';\n-import type { Metadata } from 'next';\n-import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-\n-const inter = Inter({ subsets: ['latin'] });\n-\n-export const metadata: Metadata = {\n-  title: 'SmartCanteen',\n-  description: 'Modern canteen management system for colleges',\n-};\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1750484870949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={${inter.className} bg-gray-50 text-gray-900}>\n+      <body className={${inter.className} bg-gray-50 text-gray-900}{'>'}\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484877509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={${inter.className} bg-gray-50 text-gray-900}{'>'}\n+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750484900024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484912133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${inter.className} bg-blue-50 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484924763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${inter.className} bg-blue-20 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750484930671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCanteen',\n+  description: 'Modern canteen management system for colleges',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${inter.className} bg-blue-200 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1750485122510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,106 +15,10 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={`${inter.className} bg-blue-200 text-gray-900`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n-import './globals.css';\n-import type { Metadata } from 'next';\n-import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-\n-const inter = Inter({ subsets: ['latin'] });\n-\n-export const metadata: Metadata = {\n-  title: 'SmartCanteen',\n-  description: 'Modern canteen management system for colleges',\n-};\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${inter.className} bg-blue-20 text-gray-900`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n-import './globals.css';\n-import type { Metadata } from 'next';\n-import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-\n-const inter = Inter({ subsets: ['latin'] });\n-\n-export const metadata: Metadata = {\n-  title: 'SmartCanteen',\n-  description: 'Modern canteen management system for colleges',\n-};\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n       <body className={`${inter.className} bg-blue-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n }\n-import './globals.css';\n-import type { Metadata } from 'next';\n-import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-\n-const inter = Inter({ subsets: ['latin'] });\n-\n-export const metadata: Metadata = {\n-  title: 'SmartCanteen',\n-  description: 'Modern canteen management system for colleges',\n-};\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n-import './globals.css';\n-import type { Metadata } from 'next';\n-import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n-\n-const inter = Inter({ subsets: ['latin'] });\n-\n-export const metadata: Metadata = {\n-  title: 'SmartCanteen',\n-  description: 'Modern canteen management system for colleges',\n-};\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n-        {children}\n-      </body>\n-    </html>\n-  );\n-}\n"
+                },
+                {
+                    "date": 1750516063851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={`${inter.className} bg-blue-50 text-gray-900`}>\n+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n         {children}\n       </body>\n     </html>\n   );\n"
+                },
+                {
+                    "date": 1750516370145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n const inter = Inter({ subsets: ['latin'] });\n \n export const metadata: Metadata = {\n-  title: 'SmartCoder',\n+  title: 'SmartCoderR',\n   description: 'Modern canteen management system for colleges',\n };\n \n export default function RootLayout({\n"
+                },
+                {
+                    "date": 1750516383964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import './globals.css';\n+import type { Metadata } from 'next';\n+import { Inter } from 'next/font/google';  // <-- Import Poppins instead of Inter\n+\n+const inter = Inter({ subsets: ['latin'] });\n+\n+export const metadata: Metadata = {\n+  title: 'SmartCoderRahis',\n+  description: 'Code for change code smarter',\n+};\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>\n+        {children}\n+      </body>\n+    </html>\n+  );\n+}\n"
+                }
+            ],
+            "date": 1750483816320,
+            "name": "Commit-0",
+            "content": "import { Poppins } from \"next/font/google\";\nimport \"./globals.css\";\n\nconst poppins = Poppins({\n  weight: [\"400\", \"600\", \"700\"],\n  subsets: [\"latin\"],\n  variable: \"--font-poppins\",\n});\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body className={`${poppins.variable} antialiased`}>\n        {children}\n      </body>\n    </html>\n  );\n}\n"
+        }
+    ]
+}

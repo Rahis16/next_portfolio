@@ -1,0 +1,278 @@
+{
+    "sourceFile": "app/components/Card.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 65,
+            "patches": [
+                {
+                    "date": 1750486748474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750486756570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div>\r\n+    <div className=''>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750486772142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className=''>\r\n+    <div className='w-20 h-20 '>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750486777785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-20 '>\r\n+    <div className='w-20 h-20 border rounded'>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750486783850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-20 border rounded'>\r\n+    <div className='w-20 h-20 border rounded shadow'>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750486794143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-20 h-20 border rounded shadow'>\r\n+        \r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750486799204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,22 +2,11 @@\n \r\n const Card = () => {\r\n   return (\r\n     <div className='w-20 h-20 border rounded shadow'>\r\n-        \r\n+        this is cart\r\n       \r\n     </div>\r\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-20 h-20 border rounded shadow'>\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750486804674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-20 h-20 border rounded shadow'>\r\n+        this is cart\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750486813258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-20 h-20 border rounded shadow'>\r\n+        this is cart\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750486818486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-20 h-20 border rounded shadow '>\r\n+        this is cart\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750486825395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,48 +1,12 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-20 border rounded shadow '>\r\n+    <div className='w-20 h-20 border rounded shadow flex items-center ju'>\r\n         this is cart\r\n       \r\n     </div>\r\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-20 h-20 border rounded shadow'>\r\n-        this is cart\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-20 h-20 border rounded shadow'>\r\n-        this is cart\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-20 h-20 border rounded shadow'>\r\n-        this is cart\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750486917907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import React from 'react'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-20 border rounded shadow flex items-center ju'>\r\n+    <div className='w-20 h-20 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n+        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750486926685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import React from 'react'\r\n+import Button from './Button'\r\n \r\n const Card = () => {\r\n   return (\r\n     <div className='w-20 h-20 border rounded shadow flex items-center justify-center'>\r\n"
+                },
+                {
+                    "date": 1750486935151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Button from './Button'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-20 border rounded shadow flex items-center justify-center'>\r\n+    <div className='w-20 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n       \r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750486942515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Button from './Button'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-20 h-110 border rounded shadow flex items-center justify-center'>\r\n+    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n       \r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750486960633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\r\n import React from 'react'\r\n import Button from './Button'\r\n \r\n const Card = () => {\r\n"
+                },
+                {
+                    "date": 1750486970458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+'use client'\r\n+import React from 'react'\r\n+import Button from './Button'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n+        this is cart\r\n+        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750487051161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+'use client'\r\n+import React from 'react'\r\n+import Button from './Button'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n+        this is cart\r\n+        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750487063117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+'use client'\r\n+import React from 'react'\r\n+import Button from './Button'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n+        this is cart\r\n+        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n+            \r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750487068391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,56 +6,11 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-            \r\n+        Bu\r\n       \r\n     </div>\r\n   )\r\n }\r\n \r\n export default Card\r\n-'use client'\r\n-import React from 'react'\r\n-import Button from './Button'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n-        this is cart\r\n-        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-'use client'\r\n-import React from 'react'\r\n-import Button from './Button'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n-        this is cart\r\n-        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-\r\n-import React from 'react'\r\n-import Button from './Button'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n-        this is cart\r\n-        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750487075713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        Bu\r\n+        Button\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487080789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        Button\r\n+        <Button ></Button>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487088036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button ></Button>\r\n+        \r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487094237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        \r\n+        <button\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487101550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <button\r\n+        <button label\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487107766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <button label\r\n+        <button label=\"hello\" \r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487113291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <button label=\"hello\" \r\n+        <button label=\"hello\" />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487123905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <button label=\"hello\" />\r\n+        <Buttonutton label=\"hello\" varia />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487130394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+'use client'\r\n+import React from 'react'\r\n+import Button from './Button'\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n+        this is cart\r\n+        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n+        <Button label=\"hello\" variant='' />\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750487143267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,27 +6,11 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button label=\"hello\" variant='' />\r\n+        <Button label=\"hello\" variant='secondary' o />\r\n       \r\n     </div>\r\n   )\r\n }\r\n \r\n export default Card\r\n-'use client'\r\n-import React from 'react'\r\n-import Button from './Button'\r\n-\r\n-const Card = () => {\r\n-  return (\r\n-    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n-        this is cart\r\n-        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Buttonutton label=\"hello\" varia />\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750487149572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button label=\"hello\" variant='secondary' o />\r\n+        <Button label=\"hello\" variant='secondary' onClick={()=>} />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487155628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button label=\"hello\" variant='secondary' onClick={()=>} />\r\n+        <Button label=\"hello\" variant='secondary' onClick={()=> alert()} />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750487161193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   return (\r\n     <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n         this is cart\r\n         <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button label=\"hello\" variant='secondary' onClick={()=> alert()} />\r\n+        <Button label=\"hello\" variant='secondary' onClick={()=> alert(\"This is secondary button\")} />\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488121968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,9 @@\n-'use client'\r\n import React from 'react'\r\n-import Button from './Button'\r\n \r\n const Card = () => {\r\n   return (\r\n-    <div className='w-110 h-110 border rounded shadow flex items-center justify-center'>\r\n-        this is cart\r\n-        <Button label=\"Submit\" onClick={() => alert(\"Clicked!\")} />\r\n-        <Button label=\"hello\" variant='secondary' onClick={()=> alert(\"This is secondary button\")} />\r\n+    <div>\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488127817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n-const Card = () => {\r\n+const Card = (props) => {\r\n   return (\r\n     <div>\r\n       \r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750488136207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import React from 'react'\r\n \r\n-const Card = (props) => {\r\n+const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n+        \r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488142600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n-        \r\n+        {props.name}\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488148820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n+        {props}\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488156247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n-        {props}\r\n+        {props.price}\r\n       \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750488164791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\r\n+\r\n+const Card = (props:any) => {\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488174399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\r\n+\r\n+const Card = (props:any) => {\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488179505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,36 +4,9 @@\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n-      \r\n     </div>\r\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = (props:any) => {\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = (props:any) => {\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-      \r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750488248879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\r\n+\r\n+const Card = (props:any) => {\r\n+    console.log\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488254873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react'\r\n \r\n const Card = (props:any) => {\r\n-    console.log\r\n+    console.log(props)\r\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n@@ -10,16 +10,4 @@\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = (props:any) => {\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750488285129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from 'react'\r\n+\r\n+const Card = (props:any) => {\r\n+    console.log(pro)\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488296073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import React from 'react'\r\n+\r\n+typ\r\n+\r\n+const Card = (props:any) => {\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488301418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n-typ\r\n+type CardProps\r\n \r\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n@@ -12,30 +12,4 @@\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = (props:any) => {\r\n-    console.log(pro)\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n-import React from 'react'\r\n-\r\n-const Card = (props:any) => {\r\n-    console.log(props)\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750488309436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n-type CardProps\r\n+type CardProps \r\n \r\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1750488316541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import React from 'react'\r\n \r\n-type CardProps \r\n+type CardProps = {\r\n+    \r\n+}\r\n \r\n const Card = (props:any) => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1750488323436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react'\r\n \r\n type CardProps = {\r\n-    \r\n+    name: string\r\n }\r\n \r\n const Card = (props:any) => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1750488329216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React from 'react'\r\n \r\n type CardProps = {\r\n-    name: string\r\n+    name: string;\r\n+    price\r\n }\r\n \r\n const Card = (props:any) => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1750488340173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n type CardProps = {\r\n     name: string;\r\n-    price\r\n+    price: number\r\n }\r\n \r\n const Card = (props:any) => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1750488348052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from 'react'\r\n+\r\n+type CardProps = {\r\n+    name: string;\r\n+    price: number;\r\n+}\r\n+\r\n+const Card = () => {\r\n+  return (\r\n+    <div>\r\n+        {props.name}\r\n+        {props.price}\r\n+\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                },
+                {
+                    "date": 1750488353549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,22 +15,4 @@\n   )\r\n }\r\n \r\n export default Card\r\n-import React from 'react'\r\n-\r\n-type CardProps = {\r\n-    name: string;\r\n-    price: number\r\n-}\r\n-\r\n-const Card = (props:any) => {\r\n-  return (\r\n-    <div>\r\n-        {props.name}\r\n-        {props.price}\r\n-\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default Card\r\n"
+                },
+                {
+                    "date": 1750488369652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card = () => {\r\n+const Card: Rea = () => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n"
+                },
+                {
+                    "date": 1750488381792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: Rea = () => {\r\n+const Card: React.FC<CardProps = () => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n"
+                },
+                {
+                    "date": 1750488402041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: React.FC<CardProps = () => {\r\n+const Card: React.FC<CardProps> = ({}) => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n"
+                },
+                {
+                    "date": 1750488409236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: React.FC<CardProps> = ({}) => {\r\n+const Card: React.FC<CardProps> = ({name, }) => {\r\n   return (\r\n     <div>\r\n         {props.name}\r\n         {props.price}\r\n"
+                },
+                {
+                    "date": 1750488416235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: React.FC<CardProps> = ({name, }) => {\r\n+const Card: React.FC<CardProps> = ({name, price}) => {\r\n   return (\r\n     <div>\r\n-        {props.name}\r\n+        {.name}\r\n         {props.price}\r\n \r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1750488422112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n \r\n const Card: React.FC<CardProps> = ({name, price}) => {\r\n   return (\r\n     <div>\r\n-        {.name}\r\n-        {props.price}\r\n+        {name}\r\n+        {price}\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1750516077935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: React.FC<CardProps> = ({name, price}) => {\r\n+const Card: ({name, price}) => {\r\n   return (\r\n     <div>\r\n         {name}\r\n         {price}\r\n"
+                },
+                {
+                    "date": 1750516095859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card: ({name, price}) => {\r\n+const Card ({{name, price}) => {\r\n   return (\r\n     <div>\r\n         {name}\r\n         {price}\r\n"
+                },
+                {
+                    "date": 1750516106224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card ({{name, price}) => {\r\n+const Card ({name, price}) => {\r\n   return (\r\n     <div>\r\n         {name}\r\n         {price}\r\n"
+                },
+                {
+                    "date": 1750516111574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card ({name, price}) => {\r\n+const Card ({name, price} Card) => {\r\n   return (\r\n     <div>\r\n         {name}\r\n         {price}\r\n"
+                },
+                {
+                    "date": 1750516117468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name: string;\r\n     price: number;\r\n }\r\n \r\n-const Card ({name, price} CardP) => {\r\n+const Card ({name, price} CardPro) => {\r\n   return (\r\n     <div>\r\n         {name}\r\n         {price}\r\n"
+                },
+                {
+                    "date": 1750516190648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import React from 'react'\r\n+\r\n+type CardProps = {\r\n+    name: string;\r\n+    price: number;\r\n+}\r\n+\r\n+const Card = ({name, price}: CardProps) => {\r\n+  return (\r\n+    <div>\r\n+        \r\n+\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default Card\r\n"
+                }
+            ],
+            "date": 1750486748474,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Card = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Card\r\n"
+        }
+    ]
+}

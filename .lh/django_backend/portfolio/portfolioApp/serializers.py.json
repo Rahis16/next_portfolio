@@ -1,0 +1,194 @@
+{
+    "sourceFile": "django_backend/portfolio/portfolioApp/serializers.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 44,
+            "patches": [
+                {
+                    "date": 1751004374318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751004381633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from djan\n\\ No newline at end of file\n+from django_r\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004386933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from django_r\n\\ No newline at end of file\n+from rest_fra\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004392390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from rest_fra\n\\ No newline at end of file\n+from rest_framework\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004399737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from rest_framework\n\\ No newline at end of file\n+from rest_framework import serial\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004405264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from rest_framework import serial\n\\ No newline at end of file\n+from rest_framework import serializers\r\n"
+                },
+                {
+                    "date": 1751004510888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from rest_framework import serializers\r\n+from rest_framework import serializers\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004692591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-from rest_framework import serializers\n\\ No newline at end of file\n+from rest_framework import serializers\r\n"
+                },
+                {
+                    "date": 1751004699808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n from rest_framework import serializers\r\n+from .models im\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004705439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n from rest_framework import serializers\r\n-from .models im\n\\ No newline at end of file\n+from .models import Profile\r\n+\r\n"
+                },
+                {
+                    "date": 1751004711706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n+class ProfileSeri\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004719103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n-class ProfileSeri\n\\ No newline at end of file\n+class ProfileSerializer\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004725220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n-class ProfileSerializer\n\\ No newline at end of file\n+class ProfileSerializer(serializers.)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004730728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+from rest_framework import serializers\r\n+from .models import Profile\r\n+\r\n+class ProfileSerializer(serializers.ModelSerializer)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004738207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,5 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n-class ProfileSerializer(serializers.ModelSerializer)\n-from rest_framework import serializers\r\n-from .models import Profile\r\n-\r\n-class ProfileSerializer(serializers.)\n\\ No newline at end of file\n+class ProfileSerializer(serializers.ModelSerializer):\r\n+    class Me\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004745640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n-    class Me\n\\ No newline at end of file\n+    class Meta:\r\n+        mode\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004751608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n-        mode\n\\ No newline at end of file\n+        model = Profile\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004757188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n-        model = Profile\n\\ No newline at end of file\n+        model = Profile\r\n+        fiel\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004766242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n         model = Profile\r\n-        fiel\n\\ No newline at end of file\n+        fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751004771877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+from rest_framework import serializers\r\n+from .models import Profile\r\n+\r\n+class ProfileSerializer(serializers.ModelSerializer):\r\n+    class Meta:\r\n+        model = Profile\r\n+        fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005192947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,8 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n+    photo = serializers\r\n     class Meta:\r\n         model = Profile\r\n-        fields = '__all__'\n-from rest_framework import serializers\r\n-from .models import Profile\r\n-\r\n-class ProfileSerializer(serializers.ModelSerializer):\r\n-    class Meta:\r\n-        model = Profile\r\n         fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005198126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n-    photo = serializers\r\n+    photo = serializers.ImageField(use)\r\n     class Meta:\r\n         model = Profile\r\n         fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005206560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n-    photo = serializers.ImageField(use)\r\n+    photo = serializers.ImageField(use_url = True)\r\n     class Meta:\r\n         model = Profile\r\n         fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005420776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n from rest_framework import serializers\r\n from .models import Profile\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n-    photo = serializers.ImageField(use_url = True)\r\n+    # photo = serializers.ImageField(use_url = True)\r\n     class Meta:\r\n         model = Profile\r\n         fields = '__all__'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005655098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,9 @@\n class ProfileSerializer(serializers.ModelSerializer):\r\n     # photo = serializers.ImageField(use_url = True)\r\n     class Meta:\r\n         model = Profile\r\n-        fields = '__all__'\n\\ No newline at end of file\n+        fields = '__all__'\r\n+        \r\n+        \r\n+        \r\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005663426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n         fields = '__all__'\r\n         \r\n         \r\n         \r\n-        \n\\ No newline at end of file\n+class AboutSerializer        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005670318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n         fields = '__all__'\r\n         \r\n         \r\n         \r\n-class AboutSerializer        \n\\ No newline at end of file\n+class AboutSerializer(serializers.Mode)        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005676539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n         fields = '__all__'\r\n         \r\n         \r\n         \r\n-class AboutSerializer(serializers.Mode)        \n\\ No newline at end of file\n+class AboutSerializer(serializers.ModelSerializer)        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005681860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n         fields = '__all__'\r\n         \r\n         \r\n         \r\n-class AboutSerializer(serializers.ModelSerializer)        \n\\ No newline at end of file\n+class AboutSerializer(serializers.ModelSerializer):\r\n+            \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005688409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n         \r\n         \r\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n-            \n\\ No newline at end of file\n+    class Meta:\r\n+        ,        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005696622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n         \r\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n-        ,        \n\\ No newline at end of file\n+    model =         \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005701993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n from rest_framework import serializers\r\n-from .models import Profile\r\n+from .models import Profile, About\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n     # photo = serializers.ImageField(use_url = True)\r\n     class Meta:\r\n@@ -10,5 +10,5 @@\n         \r\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n-    model =         \n\\ No newline at end of file\n+    model = A        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005708864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n         \r\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n-    model = A        \n\\ No newline at end of file\n+    model = About\r\n+    fir        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005715470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n     model = About\r\n-    fir        \n\\ No newline at end of file\n+    fields =         \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005724657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n     model = About\r\n-    fields =         \n\\ No newline at end of file\n+    fields = '__all__'        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751005731262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+from rest_framework import serializers\r\n+from .models import Profile, About\r\n+\r\n+class ProfileSerializer(serializers.ModelSerializer):\r\n+    # photo = serializers.ImageField(use_url = True)\r\n+    class Meta:\r\n+        model = Profile\r\n+        fields = '__all__'\r\n+        \r\n+        \r\n+        \r\n+class AboutSerializer(serializers.ModelSerializer):\r\n+    class Meta:\r\n+       model = About\r\n+       fields = '__all__'        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018761418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n from rest_framework import serializers\r\n-from .models import Profile, About\r\n+from .models import Profile, About, Project\r\n \r\n class ProfileSerializer(serializers.ModelSerializer):\r\n     # photo = serializers.ImageField(use_url = True)\r\n     class Meta:\r\n@@ -11,20 +11,5 @@\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n        model = About\r\n-       fields = '__all__'        \n-from rest_framework import serializers\r\n-from .models import Profile, About\r\n-\r\n-class ProfileSerializer(serializers.ModelSerializer):\r\n-    # photo = serializers.ImageField(use_url = True)\r\n-    class Meta:\r\n-        model = Profile\r\n-        fields = '__all__'\r\n-        \r\n-        \r\n-        \r\n-class AboutSerializer(serializers.ModelSerializer):\r\n-    class Meta:\r\n-    model = About\r\n-    fields = '__all__'        \n\\ No newline at end of file\n+       fields = '__all__'        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018767962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,8 @@\n         \r\n class AboutSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n        model = About\r\n-       fields = '__all__'        \n\\ No newline at end of file\n+       fields = '__all__'        \r\n+       \r\n+       \r\n+class        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018785000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n        model = About\r\n        fields = '__all__'        \r\n        \r\n        \r\n-class        \n\\ No newline at end of file\n+class ProjectSerializer(serializers.)       \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018794360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,6 @@\n        model = About\r\n        fields = '__all__'        \r\n        \r\n        \r\n-class ProjectSerializer(serializers.)       \n\\ No newline at end of file\n+class ProjectSerializer(serializers.ModelSerializer):\r\n+           \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018811672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,7 @@\n        fields = '__all__'        \r\n        \r\n        \r\n class ProjectSerializer(serializers.ModelSerializer):\r\n-           \n\\ No newline at end of file\n+    class Meta:\r\n+        model = Project\r\n+        fields =        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751018817694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n        \r\n class ProjectSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n         model = Project\r\n-        fields =        \n\\ No newline at end of file\n+        fields = '__all__'       \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751019271587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,7 @@\n        \r\n class ProjectSerializer(serializers.ModelSerializer):\r\n     class Meta:\r\n         model = Project\r\n-        fields = '__all__'       \n\\ No newline at end of file\n+        fields = '__all__'       \r\n+\r\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751019283317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,5 @@\n         model = Project\r\n         fields = '__all__'       \r\n \r\n \r\n-class SkillSeriali        \n\\ No newline at end of file\n+class SkillSerializ        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751019293089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+from rest_framework import serializers\r\n+from .models import Profile, About, Project\r\n+\r\n+class ProfileSerializer(serializers.ModelSerializer):\r\n+    # photo = serializers.ImageField(use_url = True)\r\n+    class Meta:\r\n+        model = Profile\r\n+        fields = '__all__'\r\n+        \r\n+        \r\n+        \r\n+class AboutSerializer(serializers.ModelSerializer):\r\n+    class Meta:\r\n+       model = About\r\n+       fields = '__all__'        \r\n+       \r\n+       \r\n+class ProjectSerializer(serializers.ModelSerializer):\r\n+    class Meta:\r\n+        model = Project\r\n+        fields = '__all__'       \r\n+\r\n+\r\n+class SkillSerializer(serializers.ModelSerializer):\r\n+            \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1751004374318,
+            "name": "Commit-0",
+            "content": "from djan"
+        }
+    ]
+}

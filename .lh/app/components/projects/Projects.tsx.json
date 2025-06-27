@@ -1,0 +1,42 @@
+{
+    "sourceFile": "app/components/projects/Projects.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1751026268631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751026289611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n // components/Projects.tsx\r\n-import ProjectList from \"./ProjectList\"; // client component\r\n+import Pro// client component\r\n \r\n const Projects = () => {\r\n   return (\r\n     <section\r\n"
+                },
+                {
+                    "date": 1751026308423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+// components/Projects.tsx\r\n+import ProjectList from \"./ProjectList\";// client component\r\n+\r\n+const Projects = () => {\r\n+  return (\r\n+    <section\r\n+      id=\"projects\"\r\n+      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n+    >\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <ProjectList />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default Projects;\r\n"
+                },
+                {
+                    "date": 1751026322349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+// components/Projects.tsx\r\n+import ProjectList from \"./ProjectList\";// client component\r\n+\r\n+const Projects = () => {\r\n+  return (\r\n+    <section\r\n+      id=\"projects\"\r\n+      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n+    >\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <ProjectList />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default Projects;\r\n"
+                },
+                {
+                    "date": 1751026329919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+// components/Projects.tsx\r\n+import ProjectList from \"./ProjectList\";// client component\r\n+\r\n+const Projects = () => {\r\n+  return (\r\n+    <section\r\n+      id=\"projects\"\r\n+      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n+    >\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <ProjectList />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default Projects;\r\n"
+                },
+                {
+                    "date": 1751026344228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+// components/Projects.tsx\r\n+import ProjectList from \"./ProjectList\";// client component\r\n+\r\n+const Projects = () => {\r\n+  return (\r\n+    <section\r\n+      id=\"projects\"\r\n+      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n+    >\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <ProjectList />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default Projects;\r\n"
+                },
+                {
+                    "date": 1751026349658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,72 +14,4 @@\n   );\r\n };\r\n \r\n export default Projects;\r\n-// components/Projects.tsx\r\n-import ProjectList from \"./ProjectList\";// client component\r\n-\r\n-const Projects = () => {\r\n-  return (\r\n-    <section\r\n-      id=\"projects\"\r\n-      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n-    >\r\n-      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n-        <ProjectList />\r\n-      </div>\r\n-    </section>\r\n-  );\r\n-};\r\n-\r\n-export default Projects;\r\n-// components/Projects.tsx\r\n-import ProjectList from \"./ProjectList\";// client component\r\n-\r\n-const Projects = () => {\r\n-  return (\r\n-    <section\r\n-      id=\"projects\"\r\n-      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n-    >\r\n-      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n-        <ProjectList />\r\n-      </div>\r\n-    </section>\r\n-  );\r\n-};\r\n-\r\n-export default Projects;\r\n-// components/Projects.tsx\r\n-import ProjectList from \"./ProjectList\";// client component\r\n-\r\n-const Projects = () => {\r\n-  return (\r\n-    <section\r\n-      id=\"projects\"\r\n-      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n-    >\r\n-      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n-        <ProjectList />\r\n-      </div>\r\n-    </section>\r\n-  );\r\n-};\r\n-\r\n-export default Projects;\r\n-// components/Projects.tsx\r\n-import Pro// client component\r\n-\r\n-const Projects = () => {\r\n-  return (\r\n-    <section\r\n-      id=\"projects\"\r\n-      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n-    >\r\n-      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n-        <ProjectList />\r\n-      </div>\r\n-    </section>\r\n-  );\r\n-};\r\n-\r\n-export default Projects;\r\n"
+                }
+            ],
+            "date": 1751026268631,
+            "name": "Commit-0",
+            "content": "// components/Projects.tsx\r\nimport ProjectList from \"./ProjectList\"; // client component\r\n\r\nconst Projects = () => {\r\n  return (\r\n    <section\r\n      id=\"projects\"\r\n      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50\"\r\n    >\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        <ProjectList />\r\n      </div>\r\n    </section>\r\n  );\r\n};\r\n\r\nexport default Projects;\r\n"
+        }
+    ]
+}

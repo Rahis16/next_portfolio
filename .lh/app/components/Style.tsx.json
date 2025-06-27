@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/components/Style.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1751025420342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751025427568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\r\n import React from 'react'\r\n \r\n const Style = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1751025437646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,46 @@\n+\"use \"\r\n \r\n import React from 'react'\r\n \r\n const Style = () => {\r\n   return (\r\n     <div>\r\n-      \r\n+      <style jsx>{`\r\n+        @keyframes fade-in-up {\r\n+          from {\r\n+            opacity: 0;\r\n+            transform: translateY(30px);\r\n+          }\r\n+          to {\r\n+            opacity: 1;\r\n+            transform: translateY(0);\r\n+          }\r\n+        }\r\n+\r\n+        @keyframes pulse-ring {\r\n+          0% {\r\n+            transform: scale(1);\r\n+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);\r\n+          }\r\n+          50% {\r\n+            transform: scale(1.05);\r\n+            box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);\r\n+          }\r\n+          100% {\r\n+            transform: scale(1);\r\n+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);\r\n+          }\r\n+        }\r\n+\r\n+        .animate-fade-in-up {\r\n+          animation: fade-in-up 1s ease-out;\r\n+        }\r\n+\r\n+        .animate-pulse-ring {\r\n+          animation: pulse-ring 2s infinite;\r\n+        }\r\n+      `}</style>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1751025443585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\"use \"\r\n+\"use client\";\r\n \r\n import React from 'react'\r\n \r\n const Style = () => {\r\n"
+                }
+            ],
+            "date": 1751025420342,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Style = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Style\r\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "app/components/Contact/Contact.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1751026483928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751026488943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n // components/Contact.tsx (Server Component)\r\n-import ContactForm fr\"./ContactForm\";om  // client component\r\n+import ContactForm from \"./ContactList\"; // client component\r\n \r\n const Contact = () => {\r\n   return (\r\n     <section\r\n"
+                },
+                {
+                    "date": 1751026510774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+// components/Contact.tsx (Server Component)\r\n+import ContactForm from \"./ContactForm\"; // client component\r\n+\r\n+const Contact = () => {\r\n+  return (\r\n+    <section\r\n+      id=\"contact\"\r\n+      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-purple-600\"\r\n+    >\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <ContactForm />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default Contact;\r\n"
+                },
+                {
+                    "date": 1751028517047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,21 +14,4 @@\n   );\r\n };\r\n \r\n export default Contact;\r\n-// components/Contact.tsx (Server Component)\r\n-import ContactForm from \"./ContactList\"; // client component\r\n-\r\n-const Contact = () => {\r\n-  return (\r\n-    <section\r\n-      id=\"contact\"\r\n-      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-purple-600\"\r\n-    >\r\n-      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n-        <ContactForm />\r\n-      </div>\r\n-    </section>\r\n-  );\r\n-};\r\n-\r\n-export default Contact;\r\n"
+                }
+            ],
+            "date": 1751026483928,
+            "name": "Commit-0",
+            "content": "// components/Contact.tsx (Server Component)\r\nimport ContactForm fr\"./ContactForm\";om  // client component\r\n\r\nconst Contact = () => {\r\n  return (\r\n    <section\r\n      id=\"contact\"\r\n      className=\"py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-purple-600\"\r\n    >\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        <ContactForm />\r\n      </div>\r\n    </section>\r\n  );\r\n};\r\n\r\nexport default Contact;\r\n"
+        }
+    ]
+}

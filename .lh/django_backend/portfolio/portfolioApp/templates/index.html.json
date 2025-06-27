@@ -1,0 +1,222 @@
+{
+    "sourceFile": "django_backend/portfolio/portfolioApp/templates/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 51,
+            "patches": [
+                {
+                    "date": 1750856880851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750856886048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    \r\n+    This is Index Page\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857079846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    This is Index Page\r\n+    \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857091469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    \r\n+    <section></section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857099826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    <section></section>\r\n+    <section class=\"home\">\r\n+        \r\n+    </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857107785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <title>Document</title>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        \r\n+        <h1>Welcome to Smart</h1>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857116732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <title>Document</title>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <h1>Welcome to Smart</h1>\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857121811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p></p>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857127547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n-        <p></p>\r\n+        <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857134632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,11 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n+    <style>\r\n+        \r\n+    </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n"
+                },
+                {
+                    "date": 1750857146924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <style>\r\n-        \r\n+        *\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750857158521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,13 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <style>\r\n-        *\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+        }\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750857163785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n         *{\r\n             padding: 0;\r\n             margin: 0;\r\n             box-sizing: border-box;\r\n+            font\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750857170935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         *{\r\n             padding: 0;\r\n             margin: 0;\r\n             box-sizing: border-box;\r\n-            font\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750857177933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+    <style>\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n+        }\r\n+\r\n+        body{\r\n+            \r\n+        }\r\n+    </style>\r\n+</head>\r\n+<body>\r\n+    <section class=\"home\">\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p>Portfolio Backend</p>\r\n+    </section>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857194738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,12 @@\n             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n         }\r\n \r\n         body{\r\n+            display: flex;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            width: 100%;\r\n             \r\n         }\r\n     </style>\r\n </head>\r\n@@ -22,27 +26,5 @@\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-    <style>\r\n-        *{\r\n-            padding: 0;\r\n-            margin: 0;\r\n-            box-sizing: border-box;\r\n-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n-        }\r\n-    </style>\r\n-</head>\r\n-<body>\r\n-    <section class=\"home\">\r\n-        <h1>Welcome to SmartCoderRahis API</h1>\r\n-        <p>Portfolio Backend</p>\r\n-    </section>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857202182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,12 @@\n             display: flex;\r\n             justify-content: center;\r\n             align-items: center;\r\n             width: 100%;\r\n-            \r\n+            height: 100%;\r\n         }\r\n+\r\n+        \r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750857209003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n             width: 100%;\r\n             height: 100%;\r\n         }\r\n \r\n-        \r\n+        .home{\r\n+            height: ;\r\n+        }\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750857218699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n             height: 100%;\r\n         }\r\n \r\n         .home{\r\n-            height: ;\r\n+            height: 50vh;\r\n+            width: ;;\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750857224411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         }\r\n \r\n         .home{\r\n             height: 50vh;\r\n-            width: ;;\r\n+            width: 50vh;\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750857232018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n \r\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n+            \r\n+\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750857237651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n-            \r\n+            box-shadow: ;\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857247371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n-            box-shadow: ;\r\n+            box-shadow: 0 4px 16px rgb(red, green, blue);\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857254539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n-            box-shadow: 0 4px 16px rgb(red, green, blue);\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0,);\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857262729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n-            box-shadow: 0 4px 16px rgb(0, 0, 0,);\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857272097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n             box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n+            border-radius: ;\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857290678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,12 @@\n         .home{\r\n             height: 50vh;\r\n             width: 50vh;\r\n             box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n-            border-radius: ;\r\n+            border-radius: 20px;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            ju\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750857307647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,16 @@\n             box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n             border-radius: 20px;\r\n             display: flex;\r\n             flex-direction: column;\r\n-            ju\r\n+            justify-content: center;\r\n+            align-items: center;\r\n \r\n         }\r\n+\r\n+        h1{\r\n+            text-align: center;\r\n+        }\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750857316527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         }\r\n \r\n         .home{\r\n             height: 50vh;\r\n-            width: 50vh;\r\n+            width: 9vh;\r\n             box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n             border-radius: 20px;\r\n             display: flex;\r\n             flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1750857329056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,14 @@\n             display: flex;\r\n             justify-content: center;\r\n             align-items: center;\r\n             width: 100%;\r\n-            height: 100%;\r\n+            height: 100vh;\r\n         }\r\n \r\n         .home{\r\n             height: 50vh;\r\n-            width: 9vh;\r\n+            width: 80vh;\r\n             box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n             border-radius: 20px;\r\n             display: flex;\r\n             flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1750857344722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n+        <img src=\"\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1750857420118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    \r\n     <title>Document</title>\r\n     <style>\r\n         *{\r\n             padding: 0;\r\n"
+                },
+                {
+                    "date": 1750857427978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    \r\n+    sta\r\n     <title>Document</title>\r\n     <style>\r\n         *{\r\n             padding: 0;\r\n"
+                },
+                {
+                    "date": 1750857434541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    \r\n+    <title>Document</title>\r\n+    <style>\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n+        }\r\n+\r\n+        body{\r\n+            display: flex;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            width: 100%;\r\n+            height: 100vh;\r\n+        }\r\n+\r\n+        .home{\r\n+            height: 50vh;\r\n+            width: 80vh;\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n+            border-radius: 20px;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+\r\n+        }\r\n+\r\n+        h1{\r\n+            text-align: center;\r\n+        }\r\n+    </style>\r\n+</head>\r\n+<body>\r\n+    <section class=\"home\">\r\n+        <img src=\"\" alt=\"\">\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p>Portfolio Backend</p>\r\n+    </section>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857441370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    \r\n+    {load}\r\n     <title>Document</title>\r\n     <style>\r\n         *{\r\n             padding: 0;\r\n@@ -44,53 +44,5 @@\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    sta\r\n-    <title>Document</title>\r\n-    <style>\r\n-        *{\r\n-            padding: 0;\r\n-            margin: 0;\r\n-            box-sizing: border-box;\r\n-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n-        }\r\n-\r\n-        body{\r\n-            display: flex;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-            width: 100%;\r\n-            height: 100vh;\r\n-        }\r\n-\r\n-        .home{\r\n-            height: 50vh;\r\n-            width: 80vh;\r\n-            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n-            border-radius: 20px;\r\n-            display: flex;\r\n-            flex-direction: column;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-\r\n-        }\r\n-\r\n-        h1{\r\n-            text-align: center;\r\n-        }\r\n-    </style>\r\n-</head>\r\n-<body>\r\n-    <section class=\"home\">\r\n-        <img src=\"\" alt=\"\">\r\n-        <h1>Welcome to SmartCoderRahis API</h1>\r\n-        <p>Portfolio Backend</p>\r\n-    </section>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857447553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    {load}\r\n+    {load static}\r\n     <title>Document</title>\r\n     <style>\r\n         *{\r\n             padding: 0;\r\n"
+                },
+                {
+                    "date": 1750857455151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    {load static}\r\n+    <title>Document</title>\r\n+    <style>\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n+        }\r\n+\r\n+        body{\r\n+            display: flex;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            width: 100%;\r\n+            height: 100vh;\r\n+        }\r\n+\r\n+        .home{\r\n+            height: 50vh;\r\n+            width: 80vh;\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n+            border-radius: 20px;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+\r\n+        }\r\n+\r\n+        h1{\r\n+            text-align: center;\r\n+        }\r\n+    </style>\r\n+</head>\r\n+<body>\r\n+    <section class=\"home\">\r\n+        <img src=\"stat\" alt=\"\">\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p>Portfolio Backend</p>\r\n+    </section>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857464972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,58 +39,10 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"stat\" alt=\"\">\r\n+        <img src=\"{{static}}\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    {load static}\r\n-    <title>Document</title>\r\n-    <style>\r\n-        *{\r\n-            padding: 0;\r\n-            margin: 0;\r\n-            box-sizing: border-box;\r\n-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n-        }\r\n-\r\n-        body{\r\n-            display: flex;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-            width: 100%;\r\n-            height: 100vh;\r\n-        }\r\n-\r\n-        .home{\r\n-            height: 50vh;\r\n-            width: 80vh;\r\n-            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n-            border-radius: 20px;\r\n-            display: flex;\r\n-            flex-direction: column;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-\r\n-        }\r\n-\r\n-        h1{\r\n-            text-align: center;\r\n-        }\r\n-    </style>\r\n-</head>\r\n-<body>\r\n-    <section class=\"home\">\r\n-        <img src=\"\" alt=\"\">\r\n-        <h1>Welcome to SmartCoderRahis API</h1>\r\n-        <p>Portfolio Backend</p>\r\n-    </section>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857480130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    load\r\n+    <title>Document</title>\r\n+    <style>\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n+        }\r\n+\r\n+        body{\r\n+            display: flex;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            width: 100%;\r\n+            height: 100vh;\r\n+        }\r\n+\r\n+        .home{\r\n+            height: 50vh;\r\n+            width: 80vh;\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n+            border-radius: 20px;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+\r\n+        }\r\n+\r\n+        h1{\r\n+            text-align: center;\r\n+        }\r\n+    </style>\r\n+</head>\r\n+<body>\r\n+    <section class=\"home\">\r\n+        <img src=\"{{static}}\" alt=\"\">\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p>Portfolio Backend</p>\r\n+    </section>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857486120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"{{static}}\" alt=\"\">\r\n+        <img src=\"{{stat\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1750857492651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    load\r\n+    {% load static %}\r\n     <title>Document</title>\r\n     <style>\r\n         *{\r\n             padding: 0;\r\n@@ -39,58 +39,10 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"{{stat\" alt=\"\">\r\n+        <img src=\"{% static '' %}\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    {load static}\r\n-    <title>Document</title>\r\n-    <style>\r\n-        *{\r\n-            padding: 0;\r\n-            margin: 0;\r\n-            box-sizing: border-box;\r\n-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n-        }\r\n-\r\n-        body{\r\n-            display: flex;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-            width: 100%;\r\n-            height: 100vh;\r\n-        }\r\n-\r\n-        .home{\r\n-            height: 50vh;\r\n-            width: 80vh;\r\n-            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n-            border-radius: 20px;\r\n-            display: flex;\r\n-            flex-direction: column;\r\n-            justify-content: center;\r\n-            align-items: center;\r\n-\r\n-        }\r\n-\r\n-        h1{\r\n-            text-align: center;\r\n-        }\r\n-    </style>\r\n-</head>\r\n-<body>\r\n-    <section class=\"home\">\r\n-        <img src=\"{{static}}\" alt=\"\">\r\n-        <h1>Welcome to SmartCoderRahis API</h1>\r\n-        <p>Portfolio Backend</p>\r\n-    </section>\r\n-</body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750857499042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"{% static '' %}\" alt=\"\">\r\n+        <img src=\"{% static 'iamges/logo4' %}\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1750857513203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"{% static 'iamges/logo4' %}\" alt=\"\">\r\n+        <img src=\"{% static 'images/logo4.gif' %}\" alt=\"\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1750857521105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n-        <img src=\"{% static 'images/logo4.gif' %}\" alt=\"\">\r\n+        <img src=\"{% static 'images/logo4.gif' %}\" alt=\"logo\">\r\n         <h1>Welcome to SmartCoderRahis API</h1>\r\n         <p>Portfolio Backend</p>\r\n     </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1750858784865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,10 @@\n \r\n         h1{\r\n             text-align: center;\r\n         }\r\n+\r\n+        img\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750858790487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,11 @@\n         h1{\r\n             text-align: center;\r\n         }\r\n \r\n-        img\r\n+        img{\r\n+            height: 20px;\r\n+        }\r\n     </style>\r\n </head>\r\n <body>\r\n     <section class=\"home\">\r\n"
+                },
+                {
+                    "date": 1750858799476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             text-align: center;\r\n         }\r\n \r\n         img{\r\n-            height: 20px;\r\n+            height: 100px;\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750858811179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             text-align: center;\r\n         }\r\n \r\n         img{\r\n-            height: 100px;\r\n+            height: 120px;\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750858816731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n         }\r\n \r\n         img{\r\n             height: 120px;\r\n+            \r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750858827384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n             display: flex;\r\n             flex-direction: column;\r\n             justify-content: center;\r\n             align-items: center;\r\n+            gap: 1rem;\r\n \r\n         }\r\n \r\n         h1{\r\n@@ -38,9 +39,9 @@\n         }\r\n \r\n         img{\r\n             height: 120px;\r\n-            \r\n+\r\n         }\r\n     </style>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1750858838159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         }\r\n \r\n         img{\r\n             height: 120px;\r\n-            margin-bottom: ;\r\n+            margin-bottom: 1;\r\n \r\n         }\r\n     </style>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1750858883572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    {% load static %}\r\n+    <title>Document</title>\r\n+    <style>\r\n+        *{\r\n+            padding: 0;\r\n+            margin: 0;\r\n+            box-sizing: border-box;\r\n+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n+        }\r\n+\r\n+        body{\r\n+            display: flex;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            width: 100%;\r\n+            height: 100vh;\r\n+        }\r\n+\r\n+        .home{\r\n+            height: 50vh;\r\n+            width: 80vh;\r\n+            box-shadow: 0 4px 16px rgb(0, 0, 0, 0.1);\r\n+            border-radius: 20px;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            justify-content: center;\r\n+            align-items: center;\r\n+            gap: 1rem;\r\n+\r\n+        }\r\n+\r\n+        h1{\r\n+            text-align: center;\r\n+            font-size: 2rem;\r\n+        }\r\n+\r\n+        img{\r\n+            height: 120px;\r\n+            margin-bottom: 1rem;\r\n+\r\n+        }\r\n+\r\n+        p{\r\n+            font-size: 20px;\r\n+        }\r\n+    </style>\r\n+</head>\r\n+<body>\r\n+    <section class=\"home\">\r\n+        <img src=\"{% static 'images/logo4.gif' %}\" alt=\"logo\">\r\n+        <h1>Welcome to SmartCoderRahis API</h1>\r\n+        <p>Portfolio Backend</p>\r\n+    </section>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1750856880851,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}

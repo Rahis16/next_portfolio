@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/components/About/About.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1751026675380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751028533691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+// components/About.tsx (Server Component)\r\n+import AboutContent from \"./AboutContent\"; // client component\r\n+\r\n+const About = () => {\r\n+  return (\r\n+    <section id=\"about\" className=\"py-12 sm:py-16 lg:py-20 bg-white\">\r\n+      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n+        <AboutContent />\r\n+      </div>\r\n+    </section>\r\n+  );\r\n+};\r\n+\r\n+export default About;\r\n"
+                }
+            ],
+            "date": 1751026675380,
+            "name": "Commit-0",
+            "content": "// components/About.tsx (Server Component)\r\nimport AboutContent from \"./AboutContent\"; // client component\r\n\r\nconst About = () => {\r\n  return (\r\n    <section id=\"about\" className=\"py-12 sm:py-16 lg:py-20 bg-white\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        <AboutContent />\r\n      </div>\r\n    </section>\r\n  );\r\n};\r\n\r\nexport default About;\r\n"
+        }
+    ]
+}

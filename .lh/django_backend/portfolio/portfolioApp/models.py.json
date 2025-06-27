@@ -1,0 +1,298 @@
+{
+    "sourceFile": "django_backend/portfolio/portfolioApp/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 70,
+            "patches": [
+                {
+                    "date": 1750943446801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750943462388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-\r\n+c\r\n"
+                },
+                {
+                    "date": 1750943470912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-c\r\n+class \r\n"
+                },
+                {
+                    "date": 1750943486219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class \r\n+class Home\r\n"
+                },
+                {
+                    "date": 1750943496325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class Home\r\n+class Intro\r\n"
+                },
+                {
+                    "date": 1750943507264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile\r\n"
+                },
+                {
+                    "date": 1750943512696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class Profile\r\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Intro\r\n+class Profile(Mod)\r\n"
+                },
+                {
+                    "date": 1750943519196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class Profile(Mod)\r\n+class Profile()\r\n"
+                },
+                {
+                    "date": 1750943525471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class Profile()\r\n+class Profile(models.Model)\r\n"
+                },
+                {
+                    "date": 1750943564208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n-class Profile(models.Model)\r\n+class Profile(models.Model):\r\n+    name\r\n"
+                },
+                {
+                    "date": 1750943579397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name\r\n+    name = models.CharField\r\n"
+                },
+                {
+                    "date": 1750943587418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name = models.CharField\r\n+    name = models.CharField(max_length=255)\r\n"
+                },
+                {
+                    "date": 1750943593426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name = models.CharField(max_length=255)\r\n+    name = models.CharField(max_length=255, default=)\r\n"
+                },
+                {
+                    "date": 1750943601436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=)\r\n+    name = models.CharField(max_length=255, default=\"Mohammad\")\r\n"
+                },
+                {
+                    "date": 1750943613256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad\")\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Sheikh\")\r\n"
+                },
+                {
+                    "date": 1750943619951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n from django.db import models\r\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Sheikh\")\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n"
+                },
+                {
+                    "date": 1750943630063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,5 @@\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    profi\r\n"
+                },
+                {
+                    "date": 1750943638633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    profi\r\n+    photo = models.\r\n"
+                },
+                {
+                    "date": 1750943643913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.\r\n+    photo = models.ImageField(upload_to=)\r\n"
+                },
+                {
+                    "date": 1750943654314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=)\r\n+    photo = models.ImageField(upload_to=\"profile/\")\r\n"
+                },
+                {
+                    "date": 1750943661842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \r\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile/\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n"
+                },
+                {
+                    "date": 1750943671627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,5 @@\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    \r\n"
+                },
+                {
+                    "date": 1750943679089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    \r\n+    intro = models\r\n"
+                },
+                {
+                    "date": 1750943684720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n # Create your models here.\r\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models\r\n+    intro = models.TextField()\r\n"
+                },
+                {
+                    "date": 1750943690115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,5 @@\n class Profile(models.Model):\r\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n     intro = models.TextField()\r\n+    \r\n"
+                },
+                {
+                    "date": 1750943752779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,5 @@\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n     intro = models.TextField()\r\n     \r\n+    \r\n"
+                },
+                {
+                    "date": 1750943757863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n     name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n     intro = models.TextField()\r\n     \r\n-    \r\n+    def __str__(self):\r\n+        return super().__str__()\r\n"
+                },
+                {
+                    "date": 1750943765272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\r\n"
+                },
+                {
+                    "date": 1750943772893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,5 @@\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n     intro = models.TextField()\r\n     \r\n     def __str__(self):\r\n-        return f\r\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return super().__str__()\r\n+        return f\"profile {}\"\r\n"
+                },
+                {
+                    "date": 1750943779750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile {sname}\"\r\n"
+                },
+                {
+                    "date": 1750943786387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,5 @@\n     photo = models.ImageField(upload_to=\"profile_photo/\")\r\n     intro = models.TextField()\r\n     \r\n     def __str__(self):\r\n-        return f\"profile {sname}\"\r\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile {}\"\r\n+        return f\"profile of {self.name}\"\r\n"
+                },
+                {
+                    "date": 1750943793782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943802223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,5 @@\n     def __str__(self):\r\n         return f\"profile of {self.name}\"\r\n \r\n \r\n-class\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\n\\ No newline at end of file\n+class Ab\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943809588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943820097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,18 +9,6 @@\n     def __str__(self):\r\n         return f\"profile of {self.name}\"\r\n \r\n \r\n-class About(models.Model)\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class Ab\n\\ No newline at end of file\n+class About(models.Model):\r\n+    title\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943826171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n         return f\"profile of {self.name}\"\r\n \r\n \r\n class About(models.Model):\r\n-    title\n\\ No newline at end of file\n+    title = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943836535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943845449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,19 +10,5 @@\n         return f\"profile of {self.name}\"\r\n \r\n \r\n class About(models.Model):\r\n-    title = models.CharField()\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = \n\\ No newline at end of file\n+    title = models.CharField(max_length=255, )\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943851486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n         return f\"profile of {self.name}\"\r\n \r\n \r\n class About(models.Model):\r\n-    title = models.CharField(max_length=255, )\n\\ No newline at end of file\n+    title = models.CharField(max_length=255, default=\"\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943861931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n         return f\"profile of {self.name}\"\r\n \r\n \r\n class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"\")\n\\ No newline at end of file\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943872707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n \r\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    \n\\ No newline at end of file\n+    about = models\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943892637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n \r\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models\n\\ No newline at end of file\n+    about = models.TextField()\r\n+    project\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943901210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    projects = models.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943910270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,21 +12,5 @@\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n-    projects = models.\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project\n\\ No newline at end of file\n+    project_count = models.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943918008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.Int\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943929030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943938351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,37 +12,5 @@\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n-    project_count = models.IntegerField\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.Int\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.\n\\ No newline at end of file\n+    project_count = models.IntegerField(max)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943943588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,5 @@\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n-    project_count = models.IntegerField(max)\n\\ No newline at end of file\n+    project_count = models.IntegerField()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943948753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943955569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,21 +12,5 @@\n \r\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n-    project_count = models.IntegerField()\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.IntegerField()\n\\ No newline at end of file\n+    project_count = models.IntegerField(default=5)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943963521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField(default=5)\r\n+    years\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943969948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField(default=5)\r\n+    years_exp = models\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943975204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,38 +13,5 @@\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n     project_count = models.IntegerField(default=5)\r\n-    years_exp = models\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.IntegerField(default=5)\r\n-    years\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.IntegerField(default=5)\n\\ No newline at end of file\n+    years_exp = models.IntegerField\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943987316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n class About(models.Model):\r\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n     project_count = models.IntegerField(default=5)\r\n-    years_exp = models.IntegerField\n\\ No newline at end of file\n+    years_exp = models.IntegerField(default=1)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750943995386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField(default=5)\r\n+    years_exp = models.IntegerField(default=1)\r\n+    clients_cpunt\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944004096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,22 +14,5 @@\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n     project_count = models.IntegerField(default=5)\r\n     years_exp = models.IntegerField(default=1)\r\n-    clients_cpunt\n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.IntegerField(default=5)\r\n-    years_exp = models.IntegerField(default=1)\n\\ No newline at end of file\n+    clients_count = models.Inte\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944011752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n     project_count = models.IntegerField(default=5)\r\n     years_exp = models.IntegerField(default=1)\r\n-    clients_count = models.Inte\n\\ No newline at end of file\n+    clients_count = models.IntegerField(default=2)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944017785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,7 @@\n     title = models.CharField(max_length=255, default=\"My Journey\")\r\n     about = models.TextField()\r\n     project_count = models.IntegerField(default=5)\r\n     years_exp = models.IntegerField(default=1)\r\n-    clients_count = models.IntegerField(default=2)\n\\ No newline at end of file\n+    clients_count = models.IntegerField(default=2)\r\n+    \r\n+    def\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944024734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,6 @@\n     project_count = models.IntegerField(default=5)\r\n     years_exp = models.IntegerField(default=1)\r\n     clients_count = models.IntegerField(default=2)\r\n     \r\n-    def\n\\ No newline at end of file\n+    def __str__(self):\r\n+        return f\"\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944033315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n     years_exp = models.IntegerField(default=1)\r\n     clients_count = models.IntegerField(default=2)\r\n     \r\n     def __str__(self):\r\n-        return f\"\"\n\\ No newline at end of file\n+        return f\"about {}\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944041482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n     years_exp = models.IntegerField(default=1)\r\n     clients_count = models.IntegerField(default=2)\r\n     \r\n     def __str__(self):\r\n-        return f\"about {}\"\n\\ No newline at end of file\n+        return f\"about {self.title}\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944053651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,9 @@\n     years_exp = models.IntegerField(default=1)\r\n     clients_count = models.IntegerField(default=2)\r\n     \r\n     def __str__(self):\r\n-        return f\"about {self.title}\"\n\\ No newline at end of file\n+        return f\"about {self.title}\"\r\n+    \r\n+    \r\n+    \r\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944060035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n         return f\"about {self.title}\"\r\n     \r\n     \r\n     \r\n-    \n\\ No newline at end of file\n+class Project    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944067206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n         return f\"about {self.title}\"\r\n     \r\n     \r\n     \r\n-class Project    \n\\ No newline at end of file\n+class Project(models.Model)    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944080131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,6 @@\n         return f\"about {self.title}\"\r\n     \r\n     \r\n     \r\n-class Project(models.Model)    \n\\ No newline at end of file\n+class Project(models.Model):\r\n+    image =     \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944087589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField(default=5)\r\n+    years_exp = models.IntegerField(default=1)\r\n+    clients_count = models.IntegerField(default=2)\r\n+    \r\n+    def __str__(self):\r\n+        return f\"about {self.title}\"\r\n+    \r\n+    \r\n+    \r\n+class Project(models.Model):\r\n+    image = models.ImageField(upload_to=)    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944092697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,31 +22,5 @@\n     \r\n     \r\n     \r\n class Project(models.Model):\r\n-    image = models.ImageField(upload_to=)    \n-from django.db import models\r\n-\r\n-# Create your models here.\r\n-class Profile(models.Model):\r\n-    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n-    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n-    intro = models.TextField()\r\n-    \r\n-    def __str__(self):\r\n-        return f\"profile of {self.name}\"\r\n-\r\n-\r\n-class About(models.Model):\r\n-    title = models.CharField(max_length=255, default=\"My Journey\")\r\n-    about = models.TextField()\r\n-    project_count = models.IntegerField(default=5)\r\n-    years_exp = models.IntegerField(default=1)\r\n-    clients_count = models.IntegerField(default=2)\r\n-    \r\n-    def __str__(self):\r\n-        return f\"about {self.title}\"\r\n-    \r\n-    \r\n-    \r\n-class Project(models.Model):\r\n-    image =     \n\\ No newline at end of file\n+    image = models.ImageField(upload_to=\"prjects\")    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944099668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,5 @@\n     \r\n     \r\n     \r\n class Project(models.Model):\r\n-    image = models.ImageField(upload_to=\"prjects\")    \n\\ No newline at end of file\n+    image = models.ImageField(upload_to=\"projects\")    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944116447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n     \r\n     \r\n     \r\n class Project(models.Model):\r\n-    image = models.ImageField(upload_to=\"projects\")    \n\\ No newline at end of file\n+    image = models.ImageField(upload_to=\"projects/\")\r\n+    title = models.    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944123136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n     \r\n     \r\n class Project(models.Model):\r\n     image = models.ImageField(upload_to=\"projects/\")\r\n-    title = models.CharField(default)    \n\\ No newline at end of file\n+    title = models.CharField(default=)    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750944140570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+from django.db import models\r\n+\r\n+# Create your models here.\r\n+class Profile(models.Model):\r\n+    name = models.CharField(max_length=255, default=\"Mohammad Rahish Shekh\")\r\n+    photo = models.ImageField(upload_to=\"profile_photo/\")\r\n+    intro = models.TextField()\r\n+    \r\n+    def __str__(self):\r\n+        return f\"profile of {self.name}\"\r\n+\r\n+\r\n+class About(models.Model):\r\n+    title = models.CharField(max_length=255, default=\"My Journey\")\r\n+    about = models.TextField()\r\n+    project_count = models.IntegerField(default=5)\r\n+    years_exp = models.IntegerField(default=1)\r\n+    clients_count = models.IntegerField(default=2)\r\n+    \r\n+    def __str__(self):\r\n+        return f\"about {self.title}\"\r\n+    \r\n+    \r\n+    \r\n+class Project(models.Model):\r\n+    image = models.ImageField(upload_to=\"projects/\")\r\n+    title = models.CharField(max_length=255, default=\"\")    \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1750943446801,
+            "name": "Commit-0",
+            "content": "from django.db import models\r\n\r\n# Create your models here.\r\n\r\n"
+        }
+    ]
+}
