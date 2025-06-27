@@ -6,55 +6,26 @@ import Image from "next/image";
 import { FaRocket, FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
 import { useSectionObserver } from "@/app/hooks/useSectionObserver";
 
-const ProjectList = () => {
+type ProjectsProps = {
+  data: any;
+}
+
+
+
+const ProjectList = ({data}: ProjectsProps) => {
   const { isVisible } = useSectionObserver();
 
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce solution with React, Node.js, and MongoDB...",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/project1.jpg",
-      github: "#",
-      live: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates...",
-      tech: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      image: "/project2.png",
-      github: "#",
-      live: "#",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather application with location-based forecasts...",
-      tech: ["React", "Chart.js", "OpenWeather API"],
-      image: "/project3.webp",
-      github: "#",
-      live: "#",
-      featured: false,
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description:
-        "A modern, responsive portfolio website showcasing projects and skills...",
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      image: "/project4.jpg",
-      github: "#",
-      live: "#",
-      featured: false,
-    },
-  ];
+  const projects = data.map((project: any) => ({
+  id: project.id,
+  title: project.title,
+  description: project.desc,
+  tech: project.tech_used.split(',').map((t: string) => t.trim()),
+  image: project.image,
+  github: project.git_link,
+  live: project.live_link,
+  featured: project.featured,
+}));
+
 
   return (
     <div
@@ -76,8 +47,8 @@ const ProjectList = () => {
         </h3>
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {projects
-            .filter((p) => p.featured)
-            .map((project) => (
+          .filter((p:any) => p.featured)
+            .map((project:any) => (
               <div
                 key={project.id}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group"
@@ -100,7 +71,7 @@ const ProjectList = () => {
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
-                    {project.tech.map((tech) => (
+                    {project.tech.map((tech:any) => (
                       <span
                         key={tech}
                         className="px-2 sm:px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs sm:text-sm"
@@ -139,8 +110,9 @@ const ProjectList = () => {
         </h3>
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           {projects
-            .filter((p) => !p.featured)
-            .map((project) => (
+            .filter((p:any) => !p.featured)
+            .slice(0, 2)
+            .map((project:any) => (
               <div
                 key={project.id}
                 className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-4 sm:p-6 border-l-4 border-blue-600"
@@ -152,7 +124,7 @@ const ProjectList = () => {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mb-3">
-                  {project.tech.map((tech) => (
+                  {project.tech.map((tech:any) => (
                     <span
                       key={tech}
                       className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs"

@@ -21,9 +21,9 @@ def profile_api(request):
 
 @api_view(['GET'])
 def about_api(request):
-    about = About.objects.all()
+    about = About.objects.first()
     
-    serializer = AboutSerializer(about, many=True, context={'request': request})
+    serializer = AboutSerializer(about, many=False, context={'request': request})
     
     return Response(serializer.data)
 

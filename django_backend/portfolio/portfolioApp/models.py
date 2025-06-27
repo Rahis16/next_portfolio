@@ -11,8 +11,10 @@ class Profile(models.Model):
 
 
 class About(models.Model):
+    photo = models.ImageField(upload_to="about/", null=True, blank=True)
     title = models.CharField(max_length=255, default="My Journey")
-    about = models.TextField()
+    about_p1 = models.TextField(default="paragraph1")
+    about_p2 = models.TextField(default="paragraph2")
     project_count = models.IntegerField(default=5)
     years_exp = models.IntegerField(default=1)
     clients_count = models.IntegerField(default=2)
@@ -29,7 +31,9 @@ class Project(models.Model):
     tech_used = models.TextField()
     git_link = models.CharField(max_length=300, default="git link")
     live_link = models.CharField(max_length=300, default="live link")
+    featured = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    
 
     def __str__(self):
         return f"Project title: {self.title}"

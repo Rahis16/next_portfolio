@@ -13,9 +13,18 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiMongodb,
+  SiDjango,
 } from "react-icons/si";
 
-const skills = [
+
+type SkillProps = {
+  data: any;
+}
+
+export default function SkillList({data}: SkillProps) {
+  const { isVisible } = useSectionObserver();
+
+  const skills = [
   { name: "React", icon: <FaReact />, level: 90, color: "bg-blue-500" },
   { name: "TypeScript", icon: <SiTypescript />, level: 85, color: "bg-blue-600" },
   { name: "Next.js", icon: <SiNextdotjs />, level: 88, color: "bg-gray-800" },
@@ -26,8 +35,6 @@ const skills = [
   { name: "Git", icon: <FaGitAlt />, level: 85, color: "bg-red-500" },
 ];
 
-export default function SkillList() {
-  const { isVisible } = useSectionObserver();
 
   return (
     <div
@@ -39,7 +46,7 @@ export default function SkillList() {
         My <span className="text-blue-600">Skills</span>
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 max-w-8xl mx-auto">
         {skills.map((skill, index) => (
           <div
             key={skill.name}
