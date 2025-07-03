@@ -20,7 +20,7 @@ class AboutAdmin(admin.ModelAdmin):
     
 @admin.register(Skill)
 class SkillAdmin(admin.ModelAdmin):
-    list_display = ("tech",)    
+    list_display = ("name",)    
     
     
 @admin.register(ContactInfo)

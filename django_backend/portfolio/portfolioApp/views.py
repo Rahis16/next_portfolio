@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from . models import Profile, About, Project, Skill
-from .serializers import ProfileSerializer, AboutSerializer, ProjectSerializer , SkillSerializer
+from . models import Profile, About, Project, Skill, ContactInfo, SociAccounts
+from .serializers import ProfileSerializer, AboutSerializer, ProjectSerializer , SkillSerializer, ContactInfoSerializer, SociAccountsSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
@@ -44,6 +44,28 @@ def skill_api(request):
     skill = Skill.objects.all().order_by('order')
     serializer = SkillSerializer(skill, many=True)
     return Response(serializer.data)
+
+
+
+@api_view(['GET'])
+def contact_api(request):
+    contact = ContactInfo.objects.first()   
+    serializer = ContactInfoSerializer(contact, many=False)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def soci_api(request):
+    soci_accounts = SociAccounts.objects.all()
+    serializer = SociAccountsSerializer(soci_accounts, many=True)
+    return Response(serializer.data)
+
+
+
+
+
+
+
     
     
     

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Profile, About, Project, Skill
+from .models import Profile, About, Project, Skill, ContactInfo, SociAccounts
 
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -25,4 +25,18 @@ class ProjectSerializer(serializers.ModelSerializer):
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
-        fields = '__all__'        
+        fields = '__all__'    
+
+
+class ContactInfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactInfo
+        fields = '__all__'
+        
+        
+        
+class SociAccountsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SociAccounts
+        fields = '__all__'
+        

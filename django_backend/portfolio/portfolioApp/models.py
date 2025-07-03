@@ -41,13 +41,14 @@ class Project(models.Model):
     
 
 class Skill(models.Model):
+    name = models.CharField(max_length=255, default="django")
     icon = models.CharField(max_length=255)
-    tech = models.CharField(max_length=255, default="django")
-    proficiency = models.IntegerField() #value in percentage like 50%
+    level = models.IntegerField() #value in percentage like 50%
+    color = models.CharField(max_length=255, default="bg-blue-500")
     order = models.IntegerField(default=1)
     
     def __str__(self):
-        return f"Skill: {self.tech}"
+        return f"Skill: {self.name}"
     
     
 

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 sm:mb-8">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
-              John Doe
+              SmartCoderRahis
             </h3>
             <p className="text-gray-400 max-w-md mx-auto text-sm sm:text-base">
               Full Stack Developer passionate about creating amazing digital
@@ -51,7 +51,7 @@ const Footer = () => {
 
           <div className="border-t border-gray-800 pt-6 sm:pt-8">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2024 John Doe. All rights reserved. Built with ❤️ and lots of ☕
+              © 2024 SmartCoderRahis. All rights reserved.
             </p>
           </div>
         </div>

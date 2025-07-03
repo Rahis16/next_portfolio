@@ -2,18 +2,21 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
+import {  
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaPaperPlane,
 } from "react-icons/fa";
 import { useSectionObserver } from "@/app/hooks/useSectionObserver";
+import LazyIcon from "../icons/LazyIcon";
 
-const ContactForm = () => {
+type ContactProps = {
+  ContactData: any;
+  SociData: any;
+}
+
+const ContactForm = ({ContactData, SociData}:ContactProps) => {
   const { isVisible } = useSectionObserver();
 
   const [contactForm, setContactForm] = useState({
@@ -45,45 +48,37 @@ const ContactForm = () => {
               Let's Connect
             </h3>
             <p className="text-blue-100 text-base sm:text-lg leading-relaxed">
-              I'm always interested in hearing about new opportunities and exciting projects. Whether
-              you have a question or just want to say hi, I'll try my best to get back to you!
+             {ContactData.desc}
             </p>
           </div>
 
           <div className="space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3 sm:gap-4 text-blue-100 text-sm sm:text-base">
               <FaEnvelope className="text-lg sm:text-xl text-yellow-300 flex-shrink-0" />
-              <span className="break-all">john.doe@example.com</span>
+              <span className="break-all">{ContactData.email} </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-blue-100 text-sm sm:text-base">
               <FaPhone className="text-lg sm:text-xl text-yellow-300 flex-shrink-0" />
-              <span>+1 (555) 123-4567</span>
+              <span>+977-{ContactData.phone} </span>
             </div>
             <div className="flex items-center gap-3 sm:gap-4 text-blue-100 text-sm sm:text-base">
               <FaMapMarkerAlt className="text-lg sm:text-xl text-yellow-300 flex-shrink-0" />
-              <span>San Francisco, CA</span>
+              <span>{ContactData.address} </span>
             </div>
           </div>
 
           <div className="flex gap-3 sm:gap-4 pt-4 sm:pt-6">
-            <a
-              href="#"
-              className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-all duration-300"
-            >
-              <FaGithub className="text-lg sm:text-xl" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-all duration-300"
-            >
-              <FaLinkedin className="text-lg sm:text-xl" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-all duration-300"
-            >
-              <FaTwitter className="text-lg sm:text-xl" />
-            </a>
+            {SociData.map((social: any) => (
+              <a
+                key={social.id}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-all duration-300 text-lg sm:text-xl"
+              >
+                <LazyIcon iconName={social.icon} />
+              </a>
+            ))}
           </div>
         </div>
 

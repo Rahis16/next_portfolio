@@ -39,7 +39,7 @@ const Hero = async () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10"></div>
         <div className="container mx-auto text-center relative z-10 max-w-6xl">
           <div className="animate-fade-in-up">
-            <div className="w-50 h-50 sm:w-35 sm:h-35 md:w-50 md:h-50 mx-auto mb-6 sm:mb-8 relative">
+            <div className="w-50 h-50 sm:w-35 sm:h-35 md:w-50 md:h-50 lg:w-90 lg:h-90 mx-auto mb-6 sm:mb-8 relative">
               <div className="w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-pulse-ring">
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                   <Image

@@ -1,2 +1,39 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+/* global.css */
+:root {
+  --bg-gradient-start: rgba(37, 99, 235, 0.1); /*Hero section bg blue-600/10 */
+  --bg-gradient-end: rgba(168, 85, 247, 0.1);  /* purple-600/10 */
+  --bg-color: #ffffff;
+  --text-color: #1f2937; /* gray-800 */
+  --text-muted: #4b5563; /* gray-600 */
+  --primary-color: #2563eb; /* blue-600 */
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+  --badge-bg: #dbeafe;             /* blue-100 */
+  --badge-bg-alt: #f3f4f6;         /* gray-100, light gray alternative badge bg */
+  --border-color: #e5e7eb;
+  --secondary-bg: #f3f4f6; 
+}
+
+[data-theme="dark"] {
+  --gradient-from: rgba(59, 130, 246, 0.3);  /* blue-500/30 */
+  --gradient-to: rgba(147, 51, 234, 0.3);    /* purple-500/30 */
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --text-muted: #94a3b8;
+  --primary-color: #3b82f6;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --badge-bg: #dbeafe;             /* blue-100 */
+  --badge-bg-alt: #f3f4f6;         /* gray-100, light gray alternative badge bg */
+  --border-color: #1f2937;
+  --secondary-bg: #1e293b;
+}
+
+
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}

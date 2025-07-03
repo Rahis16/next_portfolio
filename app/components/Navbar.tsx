@@ -11,7 +11,12 @@ import {
   FaBars,
   FaTimes,
   FaHome,
+  FaMoon,
+  FaSun,
 } from "react-icons/fa";
+
+import { IoSunny } from "react-icons/io5";
+
 
 type NavItem = {
   name: string;
@@ -32,16 +37,28 @@ const Navbar = () => {
   const [dragPos, setDragPos] = useState({ x: 20, y: 100 });
   const [popupVisible, setPopupVisible] = useState(true);
   const [showActivePopup, setShowActivePopup] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<HTMLDivElement>(null);
 
-  // Get active item icon
+  // Initial theme from localStorage
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark") setIsDarkMode(true);
+  }, []);
+
+  // Apply theme via data-theme
+  useEffect(() => {
+    const theme = isDarkMode ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [isDarkMode]);
+
   const getActiveIcon = () => {
     const activeItem = navItems.find((item) => item.href === active);
     return activeItem ? activeItem.icon : <FaUser />;
   };
 
-  // Slide gesture support
   useEffect(() => {
     let startX = 0;
     const handleTouchStart = (e: TouchEvent) => {
@@ -61,7 +78,6 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
-  // Draggable floating icon menu (mobile style)
   useEffect(() => {
     const el = popupRef.current;
     let offsetX = 0,
@@ -88,48 +104,57 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setActive(href);
-    setIsOpen(false); // Close sidebar when clicking nav item
-    setShowActivePopup(true); // Show the active popup
-
-    // Hide popup after 3 seconds
-    setTimeout(() => {
-      setShowActivePopup(false);
-    }, 1500);
-
+    setIsOpen(false);
+    setShowActivePopup(true);
+    setTimeout(() => setShowActivePopup(false), 1500);
     const section = document.querySelector(href);
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
+      {/* Home Icon */}
       <Link
-
-      href="#home"
-        className="fixed top-4 left-4 z-[100] p-2 text-2xl text-blue-600 bg-white shadow-lg rounded-full cursor-pointer transition-all"
+        href="#home"
+        className="fixed top-4 left-4 z-[100] p-2 text-2xl shadow-lg rounded-full cursor-pointer transition-all" style={{backgroundColor:"var(--card-bg)", color:"var(--primary-color)"}}
       >
         <FaHome />
       </Link>
+
+      {/* Theme Toggle Button */}
+      <button
+        onClick={() => setIsDarkMode(!isDarkMode)}
+        className="fixed top-18 left-4 z-[100] p-2 text-2xl shadow-lg rounded-full transition-all" style={{backgroundColor:"var(--card-bg)", color:"var(--primary-color)"}}
+      >
+        {isDarkMode ? <IoSunny /> : <FaMoon />}
+      </button>
+
+      
+
       {/* Hamburger */}
       <div
         ref={dragRef}
-        className="fixed z-[100] p-2 text-2xl text-blue-600 bg-white shadow-lg rounded-full cursor-pointer transition-all"
+        className="fixed z-[100] p-2 text-2xl text-blue-600 bg-white dark:bg-neutral shadow-lg rounded-full cursor-pointer transition-all"
         style={{
           top: "1rem",
           right: isOpen ? "235px" : "1rem",
           transition: "right 0.3s ease-in-out",
+          backgroundColor:"var(--card-bg)", color:"var(--primary-color)"
         }}
         onClick={() => setIsOpen(!isOpen)}
       >
         <FaBars />
       </div>
+
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 right-0 h-full w-[220px] bg-white shadow-xl transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-full w-[220px]  shadow-xl transform transition-transform duration-300 z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{backgroundColor:"var(--card-bg)"}}
       >
-        <div className="p-4 text-2xl font-bold text-blue-600">
-          <Image src="/logo4.gif" width={210} height={150} alt={"logo"}></Image>
+        <div className="p-4 text-2xl font-bold" style={{color:"var(--primary-color)"}}>
+          <Image src="/logo4.gif" width={210} height={150} alt={"logo"} />
         </div>
         <ul className="flex flex-col gap-4 border-t border-t-gray-200 px-4 pt-5">
           {navItems.map((item) => (
@@ -140,7 +165,7 @@ const Navbar = () => {
                 className={`w-full flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-500 transform ${
                   active === item.href
                     ? "bg-blue-100 text-blue-600 border-r-4 border-blue-600 animate-slidein"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                    : "text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-gray-800"
                 }`}
               >
                 <div
@@ -159,32 +184,30 @@ const Navbar = () => {
         </ul>
       </aside>
 
-      {/* /* Active Menu Popup - Circular icon with loading border animation */}
+      {/* Active Icon Popup */}
       {showActivePopup && (
         <div
           className="fixed z-[60] flex items-center justify-center animate-pulse-scale"
           style={{
-            right: "50%", // Position it at the right edge of the sidebar
-            top: "50%", // Center vertically
-            transform: "translateY(-50%) translateX(50%)", // Center the circle on the edge
+            right: "50%",
+            top: "50%",
+            transform: "translateY(-50%) translateX(50%)",
             transition: "all 0.3s ease-in-out",
           }}
         >
-          {/* Loading border ring */}
           <div className="absolute w-20 h-20 rounded-full border-4 border-transparent border-t-blue-300 border-r-blue-400 animate-spin-slow"></div>
-
-          {/* Main icon circle */}
           <div className="w-16 h-16 bg-blue-600 rounded-full shadow-lg flex items-center justify-center text-white text-2xl relative z-10">
             {getActiveIcon()}
           </div>
         </div>
       )}
-      {/* Floating popup icons nav */}
+
+      {/* Floating Popup Icons */}
       {!isOpen && popupVisible && (
         <div
           ref={popupRef}
-          className="fixed z-40 flex flex-col gap-4 bg-white p-2 rounded-xl shadow-md"
-          style={{ top: dragPos.y + 80, left: dragPos.x }}
+          className="fixed z-40 flex flex-col gap-4  p-2 rounded-xl shadow-md"
+          style={{ top: dragPos.y + 80, left: dragPos.x, backgroundColor: "var(--card-bg)" }}
         >
           <button
             onClick={() => setPopupVisible(false)}
@@ -200,7 +223,7 @@ const Navbar = () => {
               className={`p-2 text-2xl rounded-full transition-all duration-300 ${
                 active === item.href
                   ? "text-blue-600 border border-blue-600 animate-bounce"
-                  : "text-gray-600 hover:text-blue-600"
+                  : "text-gray-600 dark:text-white hover:text-blue-600"
               }`}
             >
               {item.icon}
@@ -208,6 +231,8 @@ const Navbar = () => {
           ))}
         </div>
       )}
+
+      {/* Animations */}
       <style jsx>{`
         @keyframes slidein {
           from {
@@ -253,7 +278,7 @@ const Navbar = () => {
         }
 
         .animate-spin-slow {
-          animation: spinSlow .8s linear infinite;
+          animation: spinSlow 0.8s linear infinite;
         }
       `}</style>
     </>
